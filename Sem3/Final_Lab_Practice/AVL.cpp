@@ -59,8 +59,8 @@ class AVLTree{
     }
 
     Node* balance(Node* node){
-        int balance = balanceFactor(node);
         updateHeight(node);
+        int balance = balanceFactor(node);
         // left heavy
         if(balance > 1){
             if(balanceFactor(node->left) < 0){ //left-right
