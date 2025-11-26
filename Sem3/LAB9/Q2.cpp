@@ -3,6 +3,7 @@
 using namespace std;
 
 class EmployeeNode {
+    public:
     int id;
     string name;
     string department;
